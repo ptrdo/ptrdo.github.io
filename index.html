@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>ptrdo</title>
-  <meta name="description" content="Sylwester, Peter">
+  <meta name="description" content="An enthusiastic proponent of well-designed engineering and well-engineered design.">
   <meta name="publisher" content="Sylwester, Peter">
   <meta name="copyright" content="2019">
   <meta name="language" content="English">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <meta property="og:title" content="ptrdo" />
-  <meta property="og:description" content="Sylwester, Peter" />
+  <meta property="og:title" content="Peter Sylwester" />
+  <meta property="og:description" content="An enthusiastic proponent of well-designed engineering and well-engineered design." />
   <meta property="og:determiner" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ptrdo.js.org" />
@@ -42,37 +42,83 @@
 
     h1 {
       margin: 0;
-      font-size: 5em;
-      color: rgba(0,0,0,0.2);
+      font-size: 3rem;
+      line-height: 2;
+      color: rgba(0,0,0,0.3);
     }
 
-    p {
-      font-size: 1.3em;
+    aside {
+      display: table;
+      width: 100vw;
+      border-spacing: 1px;
+      font-size: 1rem;
       margin: 0 auto;
+      border-style: solid;
+      border-color: yellow;
+      border-width: 1px 0;
+      box-shadow: 0 8px 24px goldenrod;
+      color: white;
     }
 
-    @media only screen and (max-width: 813px) {
-
-      body {
-        zoom: 0.9;
-      }
-
-      h1 {
-        font-size: 4em;
-      }
-
-      p {
-        font-size: 1.1em;
-      }
+    aside dl {
+      display: table-row;
     }
+
+    aside dl > * {
+      display: table-cell;
+      padding: 10px 20px;
+      background-color: cadetblue;
+    }
+
+    aside dl dt {
+      text-align: right;
+    }
+
+    aside dl dd {
+      text-align: left;
+    }
+
+    aside dl dd a {
+      color: yellow;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    aside dl dd a:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 813px) {}
+
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>ptrdo</h1>
-      <p></p>
-    </header>
-  </main>
+<main>
+  <header>
+    <h1>Peter Sylwester</h1>
+    <aside>
+      <dl>
+        <dt>Employment</dt>
+        <dd><a href="https://linkedin.com/in/ptrdo" title="employment">linkedin.com/in/ptrdo</a></dd>
+      </dl>
+      <dl>
+        <dt>Writing</dt>
+        <dd><a href="https://medium.com/ptrdo" title="writing">medium.com/ptrdo</a></dd>
+      </dl>
+      <dl>
+        <dt>Construction</dt>
+        <dd><a href="https://github.com/ptrdo" title="construction">github.com/ptrdo</a></dd>
+      </dl>
+      <dl>
+        <dt>Packages</dt>
+        <dd><a href="https://npmjs.com/~ptrdo" title="packages">npmjs.com/~ptrdo</a></dd>
+      </dl>
+      <dl>
+        <dt>Captures</dt>
+        <dd><a href="https://krop.com/ptrdo/" title="captures">krop.com/ptrdo</a></dd>
+      </dl>
+    </aside>
+  </header>
+</main>
 </body>
 </html>
