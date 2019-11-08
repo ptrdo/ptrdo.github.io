@@ -122,5 +122,14 @@
     </aside>
   </header>
 </main>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("ASIDE").addEventListener("click", (event) => {
+      let a,dd = (event.target).closest("DD");
+      if (!!dd) a = dd.querySelector("[HREF]");
+      if (!!a) window.location = a.getAttribute("HREF");
+    });
+  });
+</script>
 </body>
 </html>
