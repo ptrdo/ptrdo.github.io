@@ -125,9 +125,15 @@
 <script>
   window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("ASIDE").addEventListener("click", (event) => {
-      let a,dd = (event.target).closest("DD");
-      if (!!dd) a = dd.querySelector("[HREF]");
-      if (!!a) window.location = a.getAttribute("HREF");
+      let a = event.target;
+      let dd = a.closest("DD");
+      if (!!dd && dd===a)  {
+        a = dd.querySelector("[HREF]");
+        if (!!a) {
+          event.stopPropagation();
+          window.location = a.getAttribute("HREF");
+        }
+      }
     });
   });
 </script>
