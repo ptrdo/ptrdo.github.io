@@ -69,7 +69,8 @@
     aside dl > * {
       display: table-cell;
       padding: 10px 20px;
-      background-color: cadetblue;
+      background-color: hsl(182, 25%, 50%); /* cadetblue */
+      transition: all 200ms ease-in;
     }
 
     aside dl dt {
@@ -78,6 +79,15 @@
 
     aside dl dd {
       text-align: left;
+    }
+
+    aside dl dd:hover {
+      background-color: hsl(182, 25%, 40%);
+      cursor: pointer;
+    }
+
+    aside dl dd:active {
+      background-color: hsl(182, 25%, 30%);
     }
 
     aside dl dd a {
